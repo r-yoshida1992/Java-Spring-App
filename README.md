@@ -5,4 +5,4 @@
   - 3. `docker-compose build --no-cache`  //dokcerコンテナ作成(mysql)  
   - 4. `docker-compose up --d`  //データベース起動と初期化(mysql)
   - 5. `java -jar ./build/libs/SpringApp-0.0.1-SNAPSHOT.jar`  //アプリケーション起動  
-  - 6. `http://localhost:8080/` //先にアクセス  
+  - 6. `http://localhost:8080/` //左記にアクセス  
