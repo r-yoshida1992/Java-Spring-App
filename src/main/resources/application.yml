@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/spring_app?serverTimezone=JST
+    username: admin
+    password: admin
+  jpa:
+    database: MYSQL
+    open-in-view: false
+logging:
+    org:
+      hibernate:
+        SQL: DEBUG
+        type: TRACE
