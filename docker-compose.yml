@@ -1,0 +1,21 @@
+version: '3'
+services:
+  dbserver:
+    build: ./mysql
+    image: spring_app-db:0.0.1
+    restart: always
+    environment:
+      MYSQL_DATABASE: spring_app
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: admin
+      MYSQL_ROOT_PASSWORD: rootpassword
+    ports:
+    - "3306:3306"
+    volumes:
+    - ./mysql/initdb.d:/docker-entrypoint-initdb.d
+    - ./mysql/conf.d:/etc/mysql/conf.d
+    - ./log/mysql:/var/log/mysql
+
+volumes:
+  mysql-db:
+    driver: local
