@@ -1,5 +1,3 @@
---record1 user_id : admin , password : admin
---record2 user_id : test , password : test
 insert into mst_user
 (
     user_id,

@@ -1,4 +1,4 @@
-package com.example.demo.controller;
+package com.rendevelop.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -10,7 +10,11 @@ public class IndexController {
 
     @GetMapping
     public String getIndex() {
-        return "index";
+        return "/index";
     }
 
+    @GetMapping("search")
+    public String getSearch() {
+        return "/search";
+    }
 }

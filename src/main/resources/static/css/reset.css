@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+/* ============================================ 
+    reset css
+============================================ */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+ul,
+ol {
+    list-style: none
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    font-size: 14px;
+    line-height: 1.4em;
+    font-family: "メイリオ", "Meiryo", sans-serif;
+    background-color: #eee
+}
+
+a:not([class]) {
+    text-decoration-skip-ink: auto
+}
+
+img,
+picture {
+    max-width: 100%;
+    display: block
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit
+}
+
+@media(prefers-reduced-motion:reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+        scroll-behavior: auto !important
+    }
+}
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+
+input {
+    outline: 0;
+}
+
+a {
+    text-decoration: none;
+    outline: 0;
+}
